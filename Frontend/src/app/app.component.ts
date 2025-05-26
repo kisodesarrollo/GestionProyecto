@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { EmpleadosComponent } from './components/empleados/empleados.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  standalone: true,
-  imports: [EmpleadosComponent],
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'frontend';
+}

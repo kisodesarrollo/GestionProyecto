@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { EmpleadoService } from "../../Services/empleado.service";
+import { EmpleadoService } from "../../services/empleado.service";
 import { NgForm } from '@angular/forms';
-import { Empleado } from '../../Models/empleado';
+import { Empleado } from 'src/app/models/empleado';
  
 declare var M: any;
 @Component({
   selector: 'app-empleados',
   templateUrl: './empleados.component.html',
   styleUrls: ['./empleados.component.css'],
-  standalone: true,
   providers: [EmpleadoService]
 })
 export class EmpleadosComponent implements OnInit {

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Empleado } from '../Models/empleado';
+import { Empleado } from '../models/empleado';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +29,7 @@ export class EmpleadoService {
   }
 
   deleteEmpleado(_id: string) { // Solo se necesita el id, no todo lo del empleado
-    return this.http.delete(this.URL_API + `/${_id}`);// utilizamos el mï¿½todo delete
+    return this.http.delete(this.URL_API + `/${_id}`);// utilizamos el método delete
   }
 
 }
